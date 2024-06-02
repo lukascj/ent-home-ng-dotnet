@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/lukas.johansson16/Documents/ent-home/ent-home-backend/ent-home-backend.csproj": {}
+    "/Users/lukas.johansson16/Documents/GitHub/EntHome/ent-home-backend/ent-home-backend.csproj": {}
   },
   "projects": {
-    "/Users/lukas.johansson16/Documents/ent-home/ent-home-backend/ent-home-backend.csproj": {
+    "/Users/lukas.johansson16/Documents/GitHub/EntHome/ent-home-backend/ent-home-backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/lukas.johansson16/Documents/ent-home/ent-home-backend/ent-home-backend.csproj",
+        "projectUniqueName": "/Users/lukas.johansson16/Documents/GitHub/EntHome/ent-home-backend/ent-home-backend.csproj",
         "projectName": "ent-home-backend",
-        "projectPath": "/Users/lukas.johansson16/Documents/ent-home/ent-home-backend/ent-home-backend.csproj",
+        "projectPath": "/Users/lukas.johansson16/Documents/GitHub/EntHome/ent-home-backend/ent-home-backend.csproj",
         "packagesPath": "/Users/lukas.johansson16/.nuget/packages/",
-        "outputPath": "/Users/lukas.johansson16/Documents/ent-home/ent-home-backend/obj/",
+        "outputPath": "/Users/lukas.johansson16/Documents/GitHub/EntHome/ent-home-backend/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/lukas.johansson16/.nuget/NuGet/NuGet.Config"
