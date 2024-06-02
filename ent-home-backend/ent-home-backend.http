@@ -1,0 +1,6 @@
+@ent_home_backend_HostAddress = http://localhost:5239
+
+GET {{ent_home_backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
