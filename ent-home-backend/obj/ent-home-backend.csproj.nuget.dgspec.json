@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/lukas.johansson16/Documents/GitHub/EntHome/ent-home-backend/ent-home-backend.csproj": {}
+    "E:\\Documents\\GitHub\\EntHome\\ent-home-backend\\ent-home-backend.csproj": {}
   },
   "projects": {
-    "/Users/lukas.johansson16/Documents/GitHub/EntHome/ent-home-backend/ent-home-backend.csproj": {
+    "E:\\Documents\\GitHub\\EntHome\\ent-home-backend\\ent-home-backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/lukas.johansson16/Documents/GitHub/EntHome/ent-home-backend/ent-home-backend.csproj",
+        "projectUniqueName": "E:\\Documents\\GitHub\\EntHome\\ent-home-backend\\ent-home-backend.csproj",
         "projectName": "ent-home-backend",
-        "projectPath": "/Users/lukas.johansson16/Documents/GitHub/EntHome/ent-home-backend/ent-home-backend.csproj",
-        "packagesPath": "/Users/lukas.johansson16/.nuget/packages/",
-        "outputPath": "/Users/lukas.johansson16/Documents/GitHub/EntHome/ent-home-backend/obj/",
+        "projectPath": "E:\\Documents\\GitHub\\EntHome\\ent-home-backend\\ent-home-backend.csproj",
+        "packagesPath": "C:\\Users\\lukac\\.nuget\\packages\\",
+        "outputPath": "E:\\Documents\\GitHub\\EntHome\\ent-home-backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/lukas.johansson16/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\lukac\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -32,40 +32,17 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.4, )"
-            },
-            "Microsoft.EntityFrameworkCore.InMemory": {
-              "target": "Package",
-              "version": "[8.0.4, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[8.0.4, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.4, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[8.0.2, )"
-            },
-            "Npgsql.EntityFrameworkCore.PostgreSQL": {
-              "target": "Package",
-              "version": "[8.0.2, )"
-            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -90,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
