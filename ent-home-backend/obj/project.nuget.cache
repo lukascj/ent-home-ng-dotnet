@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hfDRTxUZaOE=",
+  "dgSpecHash": "yr9aVCXqUes=",
   "success": true,
-  "projectFilePath": "E:\\Documents\\GitHub\\EntHome\\ent-home-backend\\ent-home-backend.csproj",
+  "projectFilePath": "E:\\Documents\\Programming\\Projects\\GitHub\\ent-home-ng-dotnet\\ent-home-backend\\ent-home-backend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lukac\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\lukac\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

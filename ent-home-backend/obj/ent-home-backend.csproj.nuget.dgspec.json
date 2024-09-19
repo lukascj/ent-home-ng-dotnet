@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Documents\\GitHub\\EntHome\\ent-home-backend\\ent-home-backend.csproj": {}
+    "E:\\Documents\\Programming\\Projects\\GitHub\\ent-home-ng-dotnet\\ent-home-backend\\ent-home-backend.csproj": {}
   },
   "projects": {
-    "E:\\Documents\\GitHub\\EntHome\\ent-home-backend\\ent-home-backend.csproj": {
+    "E:\\Documents\\Programming\\Projects\\GitHub\\ent-home-ng-dotnet\\ent-home-backend\\ent-home-backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Documents\\GitHub\\EntHome\\ent-home-backend\\ent-home-backend.csproj",
+        "projectUniqueName": "E:\\Documents\\Programming\\Projects\\GitHub\\ent-home-ng-dotnet\\ent-home-backend\\ent-home-backend.csproj",
         "projectName": "ent-home-backend",
-        "projectPath": "E:\\Documents\\GitHub\\EntHome\\ent-home-backend\\ent-home-backend.csproj",
+        "projectPath": "E:\\Documents\\Programming\\Projects\\GitHub\\ent-home-ng-dotnet\\ent-home-backend\\ent-home-backend.csproj",
         "packagesPath": "C:\\Users\\lukac\\.nuget\\packages\\",
-        "outputPath": "E:\\Documents\\GitHub\\EntHome\\ent-home-backend\\obj\\",
+        "outputPath": "E:\\Documents\\Programming\\Projects\\GitHub\\ent-home-ng-dotnet\\ent-home-backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lukac\\AppData\\Roaming\\NuGet\\NuGet.Config"
