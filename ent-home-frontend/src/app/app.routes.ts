@@ -34,5 +34,3 @@ export const routes: Routes = [
     
     {path: '**', redirectTo: '/', pathMatch: 'full'},
 ];
-
-console.log(routes)
