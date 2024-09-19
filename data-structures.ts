@@ -3,6 +3,7 @@ export class Ent {
     title: string; // Huvudsaklig, engelsk titel. Om engelsk titel inte finns, originaltitel på originalspråk.
     originalTitle: string; // "Spirited Away" blir "千と千尋の神隠し" eller "Sen to Chihiro no Kamikakushi"
     otherTitles: { title: string, langId: number } | null;
+    handle: string; // Unik sträng som används i URL:en
     date: string; // YYYY-MM-DD
     media: { 
         poster: string, // URL
@@ -18,6 +19,7 @@ export class Ent {
         title: string, 
         originalTitle: string, 
         otherTitles: { title: string, langId: number } | null,
+        handle: string,
         date: string,
         media: { 
             poster: string,
@@ -32,6 +34,7 @@ export class Ent {
         this.title = title;
         this.originalTitle = originalTitle;
         this.otherTitles = otherTitles;
+        this.handle = handle;
         this.date = date;
         this.media = media;
         this.entType = entType;
@@ -46,6 +49,7 @@ export class Film extends Ent {
         title: string, 
         originalTitle: string, 
         otherTitles: { title: string, langId: number } | null,
+        urlLabel: string,
         date: string,
         media: { 
             poster: string,
@@ -54,36 +58,38 @@ export class Film extends Ent {
             otherBackgrounds?: string[]
         },
         entType: { isSub: boolean, id: number },
-        credits: AssignedArtist[]
+        credits: AssignedArtist[],
+        length: number
     ) {
-        super(id, title, originalTitle, otherTitles, date, media, entType, credits);
+        super(id, title, originalTitle, otherTitles, urlLabel, date, media, entType, credits);
+        this.length = length;
     }
 }
 
-interface EntType { id: number, name: string, otherNames?: string[] }
+export interface EntType { id: number, name: string, otherNames?: string[] }
 export const entTypes: EntType[] = [
-    { id: 1, name: "Film/Films", otherNames: ["Movie/Movies"] },
-    { id: 2, name: "Series/Series", otherNames: ["Show/Shows", "TV-Show/TV-Shows", "TV/TV"] },
-    { id: 3, name: "Game/Games", otherNames: ["Video-Game/Video-Games"]},
-    { id: 4, name: "Photo/Photos", otherNames: ["Photograph/Photographs", "Picture/Pictures", "Image/Images"] },
-    { id: 5, name: "Painting/Paintings" },
-    { id: 6, name: "Literature/Literature" },
-    { id: 7, name: "Music/Music" },
-]; // Singular/Plural
-interface SubEntType { id: number, name: string, otherNames?: string[], parentId: number }
+    { id: 1, name: "Film/Films/films", otherNames: ["Movie/Movies/movies"] },
+    { id: 2, name: "Series/Series/series", otherNames: ["Show/Shows/shows", "TV-Show/TV-Shows/tv-shows", "TV/TV/tv"] },
+    { id: 3, name: "Game/Games/games", otherNames: ["Video-Game/Video-Games/video-games"]},
+    { id: 4, name: "Photo/Photos/photos", otherNames: ["Photograph/Photographs/photographs", "Picture/Pictures/pictures", "Image/Images/images"] },
+    { id: 5, name: "Painting/Paintings/paintings" },
+    { id: 6, name: "Literature/Literature/literature" },
+    { id: 7, name: "Music/Music/music" },
+]; // Singular/Plural/url-handle
+export interface SubEntType { id: number, name: string, otherNames?: string[], parentId: number }
 export const subEntTypes: SubEntType[] = [
-    { id: 1, name: "Short Film/Short Films", parentId: 1 },
+    { id: 1, name: "Short Film/Short Films/short-films", parentId: 1 },
 ];
-interface AssignedEntType { isSub: boolean, id: number }
+export interface AssignedEntType { isSub: boolean, id: number }
 
 // För användning i Ent-instanser
-interface AssignedArtist { 
+export interface AssignedArtist { 
     id: number, 
     name: string, 
     roles: { roleId: string, for?: string | string[] }[]
 }
 // AI genererad
-interface Role { id: number, name: string, entType: AssignedEntType | AssignedEntType[]} // Anger entType eftersom (exempelvis) en film-producent och en musik-producent är två väldigt olika saker
+export interface Role { id: number, name: string, entType: AssignedEntType | AssignedEntType[]} // Anger entType eftersom (exempelvis) en film-producent och en musik-producent är två väldigt olika saker
 export const roles: Role[] = [
     { id: 1, name: "Actor", entType: { isSub: false, id: 1 } },
     { id: 2, name: "Director", entType: { isSub: false, id: 1 } },
@@ -103,7 +109,7 @@ export const roles: Role[] = [
 ] as const;
 
 // AI genererad
-interface Language { id: number, name: string, country: string | string[] }
+export interface Language { id: number, name: string, country: string | string[] }
 export const languages: Language[] = [
     { id: 1, name: "English/English", country: ["United Kingdom", "United States"] },
     { id: 2, name: "Arabic/العربية", country: "Saudi Arabia" },
@@ -142,4 +148,15 @@ export const languages: Language[] = [
     { id: 35, name: "Vietnamese/Tiếng Việt", country: "Vietnam" },
     { id: 36, name: "Zulu/isiZulu", country: "South Africa" }
 ] as const;
-  
+
+export class User {
+    id: number;
+    name: string;
+    handle: string;
+
+    constructor(id: number, name: string, handle: string) {
+        this.id = id;
+        this.name = name;
+        this.handle = handle;
+    }
+}
