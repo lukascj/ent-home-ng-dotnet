@@ -6,7 +6,19 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    column-gap: 40px;
     > a {
         color: var(--c-prim-light);
+        font: 22px "Almendra SC", serif;
+        text-decoration: none;
+    }
+    > #highlighter {
+        position: absolute;
+        height: 68px;
+        width: 110px;
+        background-color: var(--c-prim-medium);
+        top: 0;
+        left: 0;
+        transform: skew(20deg, 20deg) rotateZ(-20deg);
     }
 }

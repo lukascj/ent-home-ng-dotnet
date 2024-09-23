@@ -1,4 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+
+.almendra-sc-regular {
+    font-family: "Almendra SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.jaro-uniquifier { // tydligen varierbar?
+    font-family: "Jaro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
 
 * {
     margin: 0;
@@ -14,7 +29,6 @@ body {
     --c-prim-light: rgb(200, 200, 230);
 
     background: var(--c-prim) no-repeat;
-
 }
 
 #bg {

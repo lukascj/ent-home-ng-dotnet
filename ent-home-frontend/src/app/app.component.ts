@@ -12,3 +12,4 @@ import { NavComponent } from './nav/nav.component';
 export class AppComponent {
   title = 'ent-home-frontend';
 }
+
