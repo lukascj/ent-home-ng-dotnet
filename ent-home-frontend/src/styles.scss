@@ -1,17 +1,30 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 .almendra-sc-regular {
     font-family: "Almendra SC", serif;
     font-weight: 400;
     font-style: normal;
 }
-
-.jaro-uniquifier { // tydligen varierbar?
+.jaro { // uniquifier - tydligen varierbar?
     font-family: "Jaro", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
+    font-style: normal;
+}
+.karla { // uniquifier
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+.outfit {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
     font-style: normal;
 }
 
@@ -29,6 +42,7 @@ body {
     --c-prim-light: rgb(200, 200, 230);
 
     background: var(--c-prim) no-repeat;
+    font-family: "Outfit", sans-serif;
 }
 
 #bg {

@@ -8,17 +8,19 @@ nav {
     align-items: center;
     column-gap: 40px;
     > a {
+        display: block;
         color: var(--c-prim-light);
-        font: 22px "Almendra SC", serif;
+        font: 22px "Jaro", serif;
         text-decoration: none;
+        text-transform: uppercase;
+        border: 1px solid var(--c-prim-medium);
+        padding: 4px 14px;
+        border-radius: 6px;
+        background-color: var(--c-prim-dark);
+        transition: all 0.4s ease;
     }
-    > #highlighter {
-        position: absolute;
-        height: 68px;
-        width: 110px;
+    > a:hover {
         background-color: var(--c-prim-medium);
-        top: 0;
-        left: 0;
-        transform: skew(20deg, 20deg) rotateZ(-20deg);
+        color: var(--c-white);
     }
 }
