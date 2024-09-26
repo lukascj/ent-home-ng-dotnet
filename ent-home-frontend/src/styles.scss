@@ -44,6 +44,19 @@ body {
     background: var(--c-prim) no-repeat;
     font-family: "Outfit", sans-serif;
 }
+/* Ta bort default-style från button */
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+ul {
+    list-style: none;
+}
 
 #bg {
     background: linear-gradient(var(--c-prim-dark), var(--c-prim)) no-repeat;

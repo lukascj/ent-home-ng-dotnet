@@ -9,21 +9,22 @@ import { CreateListViewComponent } from './create-list-view/create-list-view.com
 import { ListViewComponent } from './list-view/list-view.component';
 import { LogViewComponent } from './log-view/log-view.component';
 import { ProfileViewComponent } from './profile-view/profile-view.component';
+import { FormsViewComponent } from './forms-view/forms-view.component';
 
 import { entTypes, subEntTypes } from '../../../data-structures'
-
-const entTypesStr = `ents|${entTypes.concat(subEntTypes).map(type => type['name'].split('/')[2]).join('|')}`;
-const logTypesStr = 'log|review|diary-entry';
 
 // id queryParam -- Query parameter för id ("?id=") istället för route parameter (/:id)
 export const routes: Routes = [
     {path: '', component: StartViewComponent},
     
-    {path: 'create', component: CreateEntViewComponent},
     {path: 'create/ent', component: CreateEntViewComponent},
     {path: 'edit/ent/:handle', component: CreateEntViewComponent},
     {path: 'create/list', component: CreateListViewComponent},
     {path: 'edit/list', component: CreateListViewComponent}, // id queryParam
+    
+    {path: `login`, component: FormsViewComponent},
+    {path: `signup`, component: FormsViewComponent},
+    {path: `forms`, redirectTo: '/login', pathMatch: 'full'},
     
     {path: `browse`, component: BrowseViewComponent},
     {path: `search`, component: BrowseViewComponent},

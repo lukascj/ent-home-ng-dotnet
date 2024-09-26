@@ -8,5 +8,4 @@ import { Component } from '@angular/core';
   styleUrl: './browse-view.component.scss'
 })
 export class BrowseViewComponent {
-
 }

@@ -1,1 +1,13 @@
-<button></button>
+@if(slim) {
+    @if(go.length > 0) {
+        <a id="wrap" class="slim" [routerLink]="go">{{ this.label }}</a>
+    } @else {
+        <button id="wrap" class="slim">{{ this.label }}</button>
+    }
+} @else {
+    @if(go.length > 0) {
+        <a id="wrap" [routerLink]="go">{{ this.label }}</a>
+    } @else {
+        <button id="wrap">{{ this.label }}</button>
+    }
+}

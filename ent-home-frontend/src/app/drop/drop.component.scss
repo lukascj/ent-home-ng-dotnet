@@ -1,0 +1,39 @@
+#wrap {
+    width: max-content;
+    height: max-content;
+    cursor: pointer;
+    position: relative;
+    > #holder { display: none; }
+}
+#wrap.active {
+    > #holder {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 38px; // Btn-höjd. TODO: hämta btn höjd från uppmålat element.
+        > #menu {
+            display: block;
+            width: max-content;
+            background-color: var(--c-prim-dark);
+            margin-top: 10px;
+            border: 1px solid var(--c-prim-medium);
+            border-radius: 6px;
+            > li {
+                height: 32px;
+                min-width: max-content;
+                color: var(--c-prim-light);
+                font: 18px "Jaro", sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0 20px;
+                transition: all 0.4s ease;
+            }
+            > li:hover {
+                background-color: var(--c-prim-medium);
+                color: var(--c-white);
+            }
+        }
+    }
+}

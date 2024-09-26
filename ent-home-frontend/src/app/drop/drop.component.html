@@ -1,1 +1,12 @@
-<p>drop works!</p>
+<div id="wrap" #wrap (mouseover)="open($event)" (mouseout)="close($event)">
+    <app-btn label="Create"></app-btn>
+    <div id="holder">
+        <ul id="menu">
+            <li>Log</li>
+            <li>Review</li>
+            <li>Diary-entry</li>
+            <li>List</li>
+            <li>Ent</li>
+        </ul>
+    </div>
+</div>
