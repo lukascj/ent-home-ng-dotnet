@@ -1,14 +1,18 @@
-import { Component, ElementRef, viewChild, ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, viewChild, ViewChild } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { BtnComponent } from '../btn/btn.component';
 
 @Component({
   selector: 'app-drop',
   standalone: true,
-  imports: [BtnComponent],
+  imports: [BtnComponent, RouterLink],
   templateUrl: './drop.component.html',
   styleUrl: './drop.component.scss'
 })
 export class DropComponent {
+  @Input() label: string = "Dropdown";
+  @Input() go: string ="";
+  @Input() options: any[] = [];
   // @ViewChild('wrap') wrapElem!: ElementRef;
   // wrapElem = viewChild<ElementRef>('wrap');
 

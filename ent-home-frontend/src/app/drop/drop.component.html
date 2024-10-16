@@ -1,12 +1,10 @@
 <div id="wrap" #wrap (mouseover)="open($event)" (mouseout)="close($event)">
-    <app-btn label="Create"></app-btn>
-    <div id="holder">
+    <app-btn [label]="label" [go]="go"></app-btn>
+    <div id="holder"> <!--Behövs för att hover-funktionaliteten ska funkera-->
         <ul id="menu">
-            <li>Log</li>
-            <li>Review</li>
-            <li>Diary-entry</li>
-            <li>List</li>
-            <li>Ent</li>
+            @for(option of options; track option.label) {
+                @if(option.auth != "admin") { <li><a [routerLink]="option.go">{{ option.label }}</a></li> }
+            }
         </ul>
     </div>
 </div>
