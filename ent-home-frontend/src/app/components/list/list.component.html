@@ -1,0 +1,10 @@
+<div id="wrap">
+    <h2>{{ label }}</h2>
+    <div class="scroll-btn l"></div>
+    <ul id="list">
+        @for(ent of ents; track ent.handle) {
+            <li><app-ent [data]="ent"/></li>
+        }
+    </ul>
+    <div class="scroll-btn r"></div>
+</div>

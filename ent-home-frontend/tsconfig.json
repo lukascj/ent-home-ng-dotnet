@@ -4,6 +4,13 @@
   "compileOnSave": false,
   "compilerOptions": {
     "outDir": "./dist/out-tsc",
+    "baseUrl": "./",
+    "paths": {
+      "data-structures": ["../data-structures"],
+      "models/*": ["src/app/models/*"],
+      "components/*": ["src/app/components/*"],
+      "views/*": ["src/app/views/*"],
+    },
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,

@@ -1,20 +1,37 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { AfterViewInit } from '@angular/core';
-import { BtnComponent } from "../btn/btn.component";
-import { DropComponent } from '../drop/drop.component';
+import { BtnComponent } from 'components/btn/btn.component';
+import { DropComponent } from 'components/drop/drop.component';
+
+interface ICommonOptions {
+  label: string,
+  go: string,
+  auth?: string,
+}
+
+interface INavData {
+  createDrop: {
+    options: ICommonOptions[]
+  },
+  browseDrop: {
+    options: ICommonOptions[]
+  },
+  profileDrop: {
+    options: ICommonOptions[]
+  }
+}
 
 @Component({
   selector: 'app-nav',
   standalone: true,
-  imports: [RouterLink, BtnComponent, DropComponent],
+  imports: [BtnComponent, DropComponent],
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.scss'
 })
 export class NavComponent implements AfterViewInit {
   @ViewChild('wrap') wrapElem!: ElementRef;
   // public href: string = ""; // minns ej vad detta är för...
-  elemData: any = {
+  elemData: INavData = {
     createDrop: {
       options: [
         {
