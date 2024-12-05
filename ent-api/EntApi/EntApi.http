@@ -1,0 +1,6 @@
+@EntApi_HostAddress = http://localhost:5023
+
+GET {{EntApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
